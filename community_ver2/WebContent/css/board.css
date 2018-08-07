@@ -1,0 +1,92 @@
+/*
+	//단일문 주석은 사용할 수 없다.
+	태그, 페이지 등에  세부 디자인을 설정하는 언어다.
+	스타일 시트
+	
+	"미리 설정해 놓기"
+	
+	스타일!!!
+	<table은 가로 100, 200>  미리 설정
+	1. 파일 형태
+	2. 태그
+	3. 인라인 상태
+	
+	
+	A.jsp			B.jsp			c.jsp
+	<table>			<table>			<style>
+										설정
+	</table>		</table>		</style>
+	
+	D.jsp
+	<table  style="" >
+	
+	
+	<select  id="wrap">
+	<hr id="wrap">
+	<h3 id="wrap">
+	
+	<dd class="a">
+	
+	==> select{
+			모양 지정
+		}
+	
+	==> #wrap{   //태그중에  id속성이 wrap 이라고 되어 있는 모든 태그들
+	
+		}
+	
+	선택자
+	1. #...  id선택자 
+	2. .a{}     class 선택자
+	3. 태그선택자
+		select{}
+*/
+#wrap{
+	width: 970px; /*태그 중에 id가 wrap이라고 되어 있는 태그들은 가운데 정렬*/
+	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1{
+	color: #c9c2c8;
+}
+
+table{
+	width: 100%;
+	border-collapse: collapse;  /*테이블에서 칸들이 서로 벌어지는 것*/
+	font-size: 12px; /*글꼴의 크기*/
+	line-height: 24px; /*줄 간격 (위 아래) */
+}
+table td, th{
+	border: #c9c2c8 solid 1px; /*경계선 색상 스타일, 굵기*/
+	padding: 5px;  /* 안쪽 여백 */	
+}
+
+th{
+	background: #c9c2c8;  /*  th만의 배경색 */
+	width: 120px;
+	
+}
+
+
+
+a{
+	text-decoration: none; /*링크 색깔(밑줄) 없애기 */
+	color: black; /*글의 색상*/	
+}
+
+a:HOVER {
+	text-decoration: underline; /* 밑줄을 만들어라 */
+	color: green;
+}
+.dd{
+	
+}
+
+
+
+
+
+
+
